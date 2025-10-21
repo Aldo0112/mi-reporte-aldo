@@ -1,0 +1,1014 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../bluetooth/">
+      
+      
+        <link rel="next" href="../control_motor/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Carritos - Plantilla para Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#carritos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Plantilla para Documentación" class="md-header__button md-logo" aria-label="Plantilla para Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Plantilla para Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Carritos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Plantilla para Documentación" class="md-nav__button md-logo" aria-label="Plantilla para Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Plantilla para Documentación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documentación del Proyecto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Presentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentacion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bluetooth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bluetooth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Carritos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Carritos
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#carritos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carritos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Resumen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-alcance-y-exclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Alcance y Exclusiones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-planeacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Planeación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Desarrollo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrónica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include-bluetoothserialh" class="md-nav__link">
+    <span class="md-ellipsis">
+      include "BluetoothSerial.h"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="include &#34;BluetoothSerial.h&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-resultados-y-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Resultados y Evidencias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) Conclusiones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_motor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control de un motor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_servomotor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control servomotor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encendido_con_motor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encendido con botón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitcmds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Comandos básicos de Git (primeros pasos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../se%C3%B1ales_electricas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Señales electricas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#carritos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carritos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Resumen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-alcance-y-exclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Alcance y Exclusiones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-planeacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Planeación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Desarrollo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrónica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include-bluetoothserialh" class="md-nav__link">
+    <span class="md-ellipsis">
+      include "BluetoothSerial.h"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="include &#34;BluetoothSerial.h&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-resultados-y-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Resultados y Evidencias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) Conclusiones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h3 id="carritos">Carritos</h3>
+<h2 id="1-resumen">1) Resumen</h2>
+<ul>
+<li><em>Nombre del proyecto:</em> Carritos con motores DC  </li>
+<li><em>Equipo / Autor(es):</em> Emily Mendez, Aldo Fernandez, Alexandra Groot, Valeria Piña, Arturo Martínez, Sebastian Rodríguez, Erik Zepeda  </li>
+<li><em>Curso / Asignatura:</em> Introducción a la Mecatrónica  </li>
+<li><em>Fecha:</em> 15/10/2025  </li>
+<li><em>Descripción breve:</em> Desarrollo de un carrito a control remoto con bases de motores DC, puente H, ESP32, Control Bluetooth, etc.</li>
+</ul>
+<h2 id="2-objetivos">2) Objetivos</h2>
+<p><em>General:</em> </p>
+<p>Aplicar los conocimientos vistos en clase para diseñar y construir un coche a control remoto que pueda competir con los de otros equipos..</p>
+<p><em>Específicos:</em></p>
+<ul>
+<li>
+<p>Hacer un sistema que permita mover el coche de forma rápida y controlada para atrapar una pelota y anotar goles.</p>
+</li>
+<li>
+<p>Lograr meter más goles que el equipo contrario durante la competencia.</p>
+</li>
+</ul>
+<h2 id="3-alcance-y-exclusiones">3) Alcance y Exclusiones</h2>
+<ul>
+<li><em>Incluye:</em> Diseñar y construir un coche con materiales propios, con un sistema de movimiento dinámico y control remoto por Bluetooth, en un tiempo de alrededor de dos semanas.</li>
+</ul>
+<h2 id="4-planeacion">4) Planeación</h2>
+<p>Para comenzar el proyecto, el equipo se dividió en tareas. Dos integrantes se encargaron del diseño del coche, y los demás trabajaron en la parte electrónica y de programación. Así se pudo avanzar de manera más rápida y organizada.</p>
+<p>La lista de materiales que usamos fue la siguiente:</p>
+<ul>
+<li>
+<p>Puente H</p>
+</li>
+<li>
+<p>Dos motores DC</p>
+</li>
+<li>
+<p>Protoboard</p>
+</li>
+<li>
+<p>Microcontrolador ESP32</p>
+</li>
+<li>
+<p>Jumpers</p>
+</li>
+<li>
+<p>Luces LED</p>
+</li>
+<li>
+<p>Pila de 9V</p>
+</li>
+</ul>
+<p>También se utilizó MDF para construir la estructura del coche y PLA para imprimir en 3D una pala que sirviera para empujar la pelota hacia la portería del otro equipo.</p>
+<h2 id="5-desarrollo">5) Desarrollo</h2>
+<h3 id="electronica">Electrónica</h3>
+<p>Primero, se conectaron los motores a las bases hechas de MDF y luego al puente H. Se revisó que la corriente y la conexión a tierra estuvieran bien.</p>
+<p>Los pines IN1, IN2, IN3 e IN4 se conectaron para que los motores pudieran girar hacia adelante y hacia atrás según fuera necesario.</p>
+<p>Después, se conectó la ESP32, revisando las hojas de datos y cuidando que no hubiera cortos. Los pines usados se definieron más tarde en el código de programación.</p>
+<h3 id="programacion">Programación</h3>
+<p>Con las conexiones listas, se desarrolló un código para controlar el coche desde un celular mediante Bluetooth.</p>
+<p>Se crearon varias funciones: una para avanzar, otra para retroceder, una para girar a la derecha, otra a la izquierda y una más para detener el coche.</p>
+<p>Para controlar la velocidad y los giros se utilizó PWM (modulación por ancho de pulso). Por ejemplo:</p>
+<ul>
+<li>
+<p>Si gira a la izquierda, la llanta derecha se detiene y la izquierda sigue girando.</p>
+</li>
+<li>
+<p>Si gira a la derecha, se hace lo contrario.</p>
+</li>
+<li>
+<p>Para avanzar, ambas llantas giran a la misma velocidad.</p>
+</li>
+<li>
+<p>Para detenerse, las dos se apagan.</p>
+</li>
+</ul>
+<p>También se agregó una función que permite cambiar la velocidad del coche dependiendo del número que se envíe desde la aplicación Bluetooth.</p>
+<p>codigo</p>
+<h1 id="include-bluetoothserialh">include "BluetoothSerial.h"</h1>
+<p>BluetoothSerial SerialBT;</p>
+<p>// Pines del puente H</p>
+<p>const int IN1 = 12; // Motor izquierdo</p>
+<p>const int IN2 = 11;</p>
+<p>const int ENA = 13;</p>
+<p>const int IN3 = 10; // Motor derecho</p>
+<p>const int IN4 = 9;</p>
+<p>const int ENB = 7;</p>
+<p>int valSpeed = 255;</p>
+<p>void setup() {</p>
+<p>Serial.begin(115200);</p>
+<p>SerialBT.begin("CarroESP32"); // Nombre del dispositivo Bluetooth</p>
+<p>pinMode(IN1, OUTPUT);</p>
+<p>pinMode(IN2, OUTPUT);</p>
+<p>pinMode(ENA, OUTPUT);</p>
+<p>pinMode(IN3, OUTPUT);</p>
+<p>pinMode(IN4, OUTPUT);</p>
+<p>pinMode(ENB, OUTPUT);</p>
+<p>stopMotors();</p>
+<p>}</p>
+<p>void loop() {</p>
+<p>if (SerialBT.available()) {</p>
+<div class="language-text highlight"><pre><span></span><code>char command = SerialBT.read();
+
+Serial.println(command);
+
+switch (command) {
+
+  case &#39;F&#39;: forward(); break;
+
+  case &#39;B&#39;: backward(); break;
+
+  case &#39;L&#39;: turnLeft(); break;
+
+  case &#39;R&#39;: turnRight(); break;
+
+  case &#39;S&#39;: stopMotors(); break;
+
+  case &#39;0&#39;: setSpeed(0); break;
+
+  case &#39;1&#39;: setSpeed(25); break;
+
+  case &#39;2&#39;: setSpeed(50); break;
+
+  case &#39;3&#39;: setSpeed(75); break;
+
+  case &#39;4&#39;: setSpeed(100); break;
+
+  case &#39;5&#39;: setSpeed(125); break;
+
+  case &#39;6&#39;: setSpeed(150); break;
+
+  case &#39;7&#39;: setSpeed(175); break;
+
+  case &#39;8&#39;: setSpeed(200); break;
+
+  case &#39;9&#39;: setSpeed(255); break;
+
+}
+</code></pre></div>
+<p>}</p>
+<p>}</p>
+<p>void forward() {</p>
+<p>analogWrite(ENA, valSpeed);</p>
+<p>analogWrite(ENB, valSpeed);</p>
+<p>digitalWrite(IN1, HIGH);</p>
+<p>digitalWrite(IN2, LOW);</p>
+<p>digitalWrite(IN3, HIGH);</p>
+<p>digitalWrite(IN4, LOW);</p>
+<p>}</p>
+<p>void backward() {</p>
+<p>analogWrite(ENA, valSpeed);</p>
+<p>analogWrite(ENB, valSpeed);</p>
+<p>digitalWrite(IN1, LOW);</p>
+<p>digitalWrite(IN2, HIGH);</p>
+<p>digitalWrite(IN3, LOW);</p>
+<p>digitalWrite(IN4, HIGH);</p>
+<p>}</p>
+<p>void turnLeft() {</p>
+<p>analogWrite(ENA, valSpeed / 2);</p>
+<p>analogWrite(ENB, valSpeed);</p>
+<p>digitalWrite(IN1, HIGH);</p>
+<p>digitalWrite(IN2, LOW);</p>
+<p>digitalWrite(IN3, HIGH);</p>
+<p>digitalWrite(IN4, LOW);</p>
+<p>}</p>
+<p>void turnRight() {</p>
+<p>analogWrite(ENA, valSpeed);</p>
+<p>analogWrite(ENB, valSpeed / 2);</p>
+<p>digitalWrite(IN1, HIGH);</p>
+<p>digitalWrite(IN2, LOW);</p>
+<p>digitalWrite(IN3, HIGH);</p>
+<p>digitalWrite(IN4, LOW);</p>
+<p>}</p>
+<p>void stopMotors() {</p>
+<p>analogWrite(ENA, 0);</p>
+<p>analogWrite(ENB, 0);</p>
+<p>digitalWrite(IN1, LOW);</p>
+<p>digitalWrite(IN2, LOW);</p>
+<p>digitalWrite(IN3, LOW);</p>
+<p>digitalWrite(IN4, LOW);</p>
+<p>}</p>
+<p>void setSpeed(int val) {</p>
+<p>valSpeed = val;</p>
+<p>}</p>
+<h3 id="aplicacion">Aplicación</h3>
+<p>Para controlar el coche, se usó una aplicación para celular. Esta app permite asignar letras a cada botón, que luego se envían por Bluetooth a la ESP32.</p>
+<p>Se configuraron así:</p>
+<ul>
+<li>
+<p>F: Avanzar</p>
+</li>
+<li>
+<p>B: Retroceder</p>
+</li>
+<li>
+<p>L: Izquierda</p>
+</li>
+<li>
+<p>R: Derecha</p>
+</li>
+<li>
+<p>S: Detener</p>
+</li>
+</ul>
+<p>Cada vez que se presiona un botón, la aplicación manda la letra y la ESP32 ejecuta la acción correspondiente.</p>
+<p><a href="https://drive.google.com/file/d/1DLEcz_CKWwx4NYhjfOK8Q-QKgtkGvG3R/view?usp=sharing">Vista del control dentro de la aplicación</a></p>
+<h2 id="6-resultados-y-evidencias">6) Resultados y Evidencias</h2>
+<p>Antes del concurso, el coche funcionó correctamente: respondía bien a los comandos, las luces LED se encendían sin problema, la pala 3D encajó bien y el diseño del coche fue atractivo.</p>
+<p>Durante la competencia, surgieron algunos problemas. Uno de los motores se cayó cuando la pala se atoró con una silla, y aunque se volvió a asegurar, volvió a soltarse en la segunda ronda. Además, el control Bluetooth respondía con algo de retraso y los movimientos eran un poco bruscos.</p>
+<p>A pesar de eso, el funcionamiento general fue bueno. El coche cumplió con lo planeado, aunque no logró anotar goles ni obtener un lugar destacado.</p>
+<p>Videos de el carrito en funcionamiento:</p>
+<p><a href="https://youtube.com/shorts/-BoEvhaO5zg?feature=share">Video 1</a></p>
+<p><a href="https://youtu.be/CgaybSU6_40">Video 2</a></p>
+<h2 id="7-conclusiones">7) Conclusiones</h2>
+<p>El proyecto y la competencia fueron una buena experiencia. La planeación y ejecución fueron adecuadas para el tiempo disponible. El coche funcionó correctamente y cumplió con los objetivos del curso.</p>
+<p>Sin embargo, se detectaron algunas mejoras posibles:</p>
+<ul>
+<li>
+<p>Hacer más pruebas antes de la competencia.</p>
+</li>
+<li>
+<p>Asegurar mejor los motores.</p>
+</li>
+<li>
+<p>Practicar más con la aplicación para mejorar el control.</p>
+</li>
+</ul>
+<p>En términos generales, el proyecto permitió poner en práctica los conocimientos adquiridos en la materia de Introducción a la Mecatrónica. Además, contribuyó a comprender de manera más clara la integración entre la electrónica, la mecánica y la programación. También evidenció que, para lograr un buen resultado, es necesario realizar numerosas pruebas y dedicar el tiempo suficiente para obtener un proyecto funcional y con el menor número posible de fallas.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
