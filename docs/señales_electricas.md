@@ -1,6 +1,6 @@
 ## 1) Resumen
 
-- **Nombre del proyecto:** Señanes_electricas
+- **Nombre del proyecto:** Señales_electricas
 - **Equipo / Autor(es):** Aldo Alvarez, Erik Zepeda, Sebastian Gomez
 - **Curso / Asignatura:** Introducción a la mecatrónica
 - **Fecha:** 05/09/25  
