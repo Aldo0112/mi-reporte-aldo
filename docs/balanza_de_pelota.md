@@ -161,13 +161,13 @@ void loop() {
 ---
 
 ### Código Python
-
+```
 python
 import cv2
 import numpy as np
 import bluetooth
 import time
- ```
+ 
 # Configuración Bluetooth
 port = 1
 sock = bluetooth.BluetoothSocket()
