@@ -1,7 +1,7 @@
 ## 1) Resumen
 
 - *Nombre del proyecto:* Balancin con Reconocimiento de Camara  
-- *Equipo / Autor(es):* Emily Mendez, Aldo Fernandez, Alexandra Groot, Valeria Piña  
+- *Equipo / Autor(es):* Emily Mendez, Aldo Alvarez, Alexandra Groot, Valeria Piña  
 - *Curso / Asignatura:* Introducción a la Mecatrónica  
 - *Fecha:* 24/11/2025  
 - *Descripción breve:* Desarrollo de una plataforma con cámara que balancee una pelota, utilizando servomotores y el reconocimento de colores desde Python.
