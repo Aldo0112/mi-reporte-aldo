@@ -55,7 +55,7 @@ El desarrollo del código incluye:
 - El sistema funciona de manera continua, permitiendo un ajuste constante de la plataforma para mantener la pelota dentro de la zona deseada.
 
 ### Código Arduino
-
+```
 cpp
 #include <BluetoothSerial.h>
 #include <ESP32Servo.h>
@@ -156,7 +156,7 @@ void loop() {
   Serial.printf("EX=%d EY=%d | posX=%.1f posY=%.1f\n", eX, eY, posX, posY);
   delay(20);
 }
-
+```
 
 ---
 
@@ -167,7 +167,7 @@ import cv2
 import numpy as np
 import bluetooth
 import time
- 
+ ```
 # Configuración Bluetooth
 port = 1
 sock = bluetooth.BluetoothSocket()
@@ -244,7 +244,7 @@ video.release()
 cv2.destroyAllWindows()
 sock.close()
  
-
+```
 
 ---
 
