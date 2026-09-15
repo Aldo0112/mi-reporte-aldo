@@ -60,7 +60,7 @@ Para automatizar la generación de archivos Gerber, planos de ensamble y listas 
 
 En el módulo `Schaltplaneditor` (Editor de Esquemas), se construyó la lógica eléctrica del proyecto `Hola_mundo.kicad_sch`.
 
-![Esquema Eléctrico](docs/recursos/imgs/abc123bc-67e6-406e-80ac-654514811ea0.png)  
+<img width="985" height="410" alt="piezas_3d" src="https://github.com/docs/recursos/imgs/abc123bc-67e6-406e-80ac-654514811ea0.png" />
 *Figura 1: Esquema eléctrico del proyecto "Hola_mundo" en KiCad.*
 
 ### 3.1 Selección de Componentes
