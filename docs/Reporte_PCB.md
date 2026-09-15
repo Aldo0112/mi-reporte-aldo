@@ -90,7 +90,7 @@ El diseño se estructuró mediante bloques funcionales:
 
 Una vez transferida la lista de redes (*Netlist*) al `Leiterplatteneditor` (Editor de PCB), se procedió al posicionamiento de componentes y ruteo de pistas.
 
-![Layout de la PCB](docs/recursos/imgs/b6840445-175e-4ecd-a5c7-ccf16dd29f4b.jpeg)  
+![Layout de la PCB](recursos/imgs/b6840445-175e-4ecd-a5c7-ccf16dd29f4b.jpeg)  
 *Figura 2: Vista del trazado de la PCB con plano de masa y contorno en X.*
 
 ### 4.1 Definición del Contorno (`Edge.Cuts` a 2.0 mm)
