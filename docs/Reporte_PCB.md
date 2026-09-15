@@ -12,7 +12,7 @@
 | Nombre Completo | Matrícula / Código |
 | :--- | :---: |
 | **Aldo Ibrahim Alvarez Fernández** | 204916 |
-| **[Nombre del Estudiante 2]** | [234567] |
+| **Rodrigo Pacheco Valdez** | 195234 |
 
 ---
 
