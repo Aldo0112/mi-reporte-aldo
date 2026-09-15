@@ -47,6 +47,8 @@ Este proyecto describe el proceso completo de diseño y desarrollo de una placa 
 
 Para automatizar la generación de archivos Gerber, planos de ensamble y listas de materiales (BOM) estandarizadas, se instaló el complemento **KiCad FabLib** (o gestor de fabricación).
 
+<img width="985" height="410" alt="piezas_3d" src="https://github.com/docs/recursos/imgs/Screenshot 2026-09-15 163416.png" />
+
 ### Pasos de Instalación:
 1. Abrir la ventana principal de KiCad.
 2. Ingresar al **Gestor de Complementos, Plataformas y Bibliotecas** (*Plugin and Content Manager / PCM*).
