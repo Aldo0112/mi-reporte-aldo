@@ -47,7 +47,7 @@ Este proyecto describe el proceso completo de diseño y desarrollo de una placa 
 
 Para automatizar la generación de archivos Gerber, planos de ensamble y listas de materiales (BOM) estandarizadas, se instaló el complemento **KiCad FabLib** (o gestor de fabricación).
 
-![piezas_3d](docs/recursos/imgs/Screenshot%202026-09-15%20163416.png)
+![Plugin](recursos/imgs/Screenshot%202026-09-15%20163416.png)
 
 
 
