@@ -1,19 +1,18 @@
-# 🛠️ Reporte de Proyecto: Diseño y Ruteo de PCB "Hola Mundo" en KiCad
+# 🛠️ Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad
 
-**Universidad:** [Nombre de la Universidad]  
-**Facultad / Departamento:** [Facultad de Ingeniería / Electrónica]  
-**Asignatura:** [Nombre de la Materia]  
-**Periodo:** [Semestre / Año]  
+**Universidad:** Universidad Iberoamericana Puebla  
+**Carrera:** Ingeniería mecatrónica  
+**Asignatura:** Producción electrónica  
+**Periodo:** 3er semestre  
 
 ---
 
 ## 👥 Participantes del Equipo
 
-| Nombre Completo | Matrícula / Código | Rol en el Proyecto |
-| :--- | :---: | :--- |
-| **[Nombre del Estudiante 1]** | [123456] | Diseñador del Esquema Eléctrico |
-| **[Nombre del Estudiante 2]** | [234567] | Diseñador de Layout PCB y Ruteo |
-| **[Nombre del Estudiante 3]** | [345678] | Documentación y Generación de Archivos Fab |
+| Nombre Completo | Matrícula / Código |
+| :--- | :---: |
+| **Aldo Ibrahim Alvarez Fernández** | 204916 |
+| **[Nombre del Estudiante 2]** | [234567] |
 
 ---
 
@@ -34,7 +33,7 @@
 
 ## 1. Introducción y Objetivos
 
-Este proyecto describe el proceso completo de diseño y desarrollo de una placa de circuito impreso (PCB) denominada **"Hola_mundo"** utilizando la herramienta de software libre **KiCad 8 / KiCad 10**. 
+Este proyecto describe el proceso completo de diseño y desarrollo de una placa de circuito impreso (PCB)  utilizando la herramienta de software libre **KiCad 10**. 
 
 ### Objetivos:
 * Diseñar un circuito funcional con 4 pulsadores táctiles (`Switch_Tactile_Omron`), 4 LEDs indicadores (Azul y Rojo) con sus respectivas resistencias de limitación y pull-down, y conectores de alimentación/salida.
