@@ -15,7 +15,8 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
+
 1. Introducción y Objetivos.
 2. Instalación de Plugins (KiCad FabLib).
 3. Diseño del Esquema Eléctrico.
