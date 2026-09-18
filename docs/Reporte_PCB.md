@@ -16,17 +16,17 @@
 ---
 
 ## 📋 Tabla de Contenidos
-1. [Introducción y Objetivos]
-2. [Instalación de Plugins (KiCad FabLib)]
-3. [Diseño del Esquema Eléctrico]
-   - [Selección de Componentes]
-   - [Organización y Conexiones]
-4. [Diseño de la Placa de Circuito Impreso (PCB Layout)]
-   - [Definición del Contorno (Edge.Cuts a 2.0 mm)]
-   - [Enrutado y Ancho de Pistas (0.4 mm)]
-   - [Explicación de las Capas del Proyecto]
-5. [Exportación de Datos para Fabricación]
-6. [Conclusiones]
+1. Introducción y Objetivos
+2. Instalación de Plugins (KiCad FabLib)
+3. Diseño del Esquema Eléctrico
+   - Selección de Componentes
+   - Organización y Conexiones
+4. Diseño de la Placa de Circuito Impreso (PCB Layout)
+   - Definición del Contorno (Edge.Cuts a 2.0 mm)
+   - Enrutado y Ancho de Pistas (0.4 mm)
+   - Explicación de las Capas del Proyecto
+5. Exportación de Datos para Fabricación
+6. Conclusiones
 
 ---
 
