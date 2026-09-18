@@ -1,0 +1,1123 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Presentacion/">
+      
+      
+        <link rel="next" href="../balanza_de_pelota/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad - Plantilla para Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reporte-de-proyecto-diseno-y-ruteo-de-pcb-en-kicad" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Plantilla para Documentación" class="md-header__button md-logo" aria-label="Plantilla para Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Plantilla para Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Plantilla para Documentación" class="md-nav__button md-logo" aria-label="Plantilla para Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Plantilla para Documentación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Presentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presentacion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#participantes-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Participantes del Equipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-y-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción y Objetivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción y Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-de-plugins-kicad-fablib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instalación de Plugins (KiCad FabLib)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalación de Plugins (KiCad FabLib)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-de-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos de Instalación:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-esquema-electrico-schematic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del Esquema Eléctrico (Schematic Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del Esquema Eléctrico (Schematic Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-seleccion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Selección de Componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-organizacion-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Organización y Conexiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-diseno-de-la-placa-de-circuito-impreso-pcb-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Diseño de la Placa de Circuito Impreso (PCB Layout)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Diseño de la Placa de Circuito Impreso (PCB Layout)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definicion-del-contorno-edgecuts-a-20-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Definición del Contorno (Edge.Cuts a 2.0 mm)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-enrutado-y-ancho-de-pistas-04-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Enrutado y Ancho de Pistas (0.4 mm)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-explicacion-de-las-capas-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Explicación de las Capas del Proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exportacion-de-datos-para-fabricacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Exportación de Datos para Fabricación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../balanza_de_pelota/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Balanza de pelota
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bluetooth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bluetooth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../carritos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carritos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_motor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control de un motor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_servomotor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control servomotor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encendido_con_motor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encendido con botón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../se%C3%B1ales_electricas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Señales electricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#participantes-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Participantes del Equipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-y-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción y Objetivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción y Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-de-plugins-kicad-fablib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instalación de Plugins (KiCad FabLib)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalación de Plugins (KiCad FabLib)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-de-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos de Instalación:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-esquema-electrico-schematic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del Esquema Eléctrico (Schematic Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del Esquema Eléctrico (Schematic Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-seleccion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Selección de Componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-organizacion-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Organización y Conexiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-diseno-de-la-placa-de-circuito-impreso-pcb-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Diseño de la Placa de Circuito Impreso (PCB Layout)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Diseño de la Placa de Circuito Impreso (PCB Layout)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definicion-del-contorno-edgecuts-a-20-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Definición del Contorno (Edge.Cuts a 2.0 mm)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-enrutado-y-ancho-de-pistas-04-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Enrutado y Ancho de Pistas (0.4 mm)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-explicacion-de-las-capas-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Explicación de las Capas del Proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exportacion-de-datos-para-fabricacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Exportación de Datos para Fabricación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="reporte-de-proyecto-diseno-y-ruteo-de-pcb-en-kicad">Reporte de Proyecto: Diseño y Ruteo de PCB en KiCad</h1>
+<p><strong>Universidad:</strong> Universidad Iberoamericana Puebla<br />
+<strong>Carrera:</strong> Ingeniería mecatrónica<br />
+<strong>Asignatura:</strong> Producción electrónica   </p>
+<hr />
+<h2 id="participantes-del-equipo">Participantes del Equipo</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nombre Completo</th>
+<th style="text-align: center;">Matrícula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Aldo Ibrahim Alvarez Fernández</strong></td>
+<td style="text-align: center;">204916</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rodrigo Pacheco Valdez</strong></td>
+<td style="text-align: center;">195234</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<p>1. Introducción y Objetivos.<br />
+2. Instalación de Plugins (KiCad FabLib).<br />
+3. Diseño del Esquema Eléctrico.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;3.1 Selección de Componentes.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;3.2 Organización y Conexiones.<br />
+4. Diseño de la Placa de Circuito Impreso (PCB Layout).<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.1 Definición del Contorno (Edge.Cuts a 2.0 mm).<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.2 Enrutado y Ancho de Pistas (0.4 mm).<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.3 Explicación de las Capas del Proyecto.<br />
+5. Exportación de Datos para Fabricación.<br />
+6. Conclusiones.</p>
+<hr />
+<h2 id="1-introduccion-y-objetivos">1. Introducción y Objetivos</h2>
+<p>Este proyecto describe el proceso que se llevo a cabo en la materia de Producción Electrónica para diseñar, cortar y procesar una placa de cobre a una placa de circuito impreso (PCB) utilizando la herramienta de software libre <strong>KiCad 10</strong>. </p>
+<h3 id="objetivos">Objetivos:</h3>
+<ul>
+<li>Desarrollar las habilidades y conocimientos básicos en la plataforma KiCad para la elaboración de PCB desde cero.</li>
+<li>Aplicar dichos conocimientos en proyectos de esta y otras materias a futuro como sustituto de la placa de pruebas (protoboard) para routing y conexiones de circuitos. </li>
+<li>Diseñar un circuito funcional con 4 pulsadores táctiles (<code>Switch_Tactile_Omron</code>), 4 LEDs indicadores (Azul y Rojo) con sus respectivas resistencias, y conectores de alimentación/salida.</li>
+<li>Definir una geometría de borde personalizada no rectangular utilizando la capa de corte.</li>
+<li>Aplicar normas de diseño Gerber y criterios de enrutado (ancho de pistas de 0.4 mm y ancho de línea de borde de 2.0 mm).</li>
+<li>Exportar la documentación de fabricación mediante el plugin <strong>KiCad FabLib</strong>.</li>
+</ul>
+<hr />
+<h2 id="2-instalacion-de-plugins-kicad-fablib">2. Instalación de Plugins (KiCad FabLib)</h2>
+<p>Se agregó el complemento KiCad FabLib para disponer de una biblioteca estandarizada de componentes, símbolos y footprints utilizados comúnmente en entornos Fab Lab, facilitando el diseño y la fabricación de PCB.</p>
+<p><img alt="Plugin" src="../recursos/imgs/Screenshot2026-09-15.png" /></p>
+<h3 id="pasos-de-instalacion">Pasos de Instalación:</h3>
+<ol>
+<li>Abrir la ventana principal de KiCad.</li>
+<li>Ingresar al <strong>Gestor de Complementos, Plataformas y Bibliotecas</strong> (<em>Plugin and Content Manager / PCM</em>).</li>
+<li>Buscar <code>KiCad FabLib</code> o agregar el repositorio correspondiente.</li>
+<li>Hacer clic en <strong>Instalar</strong> y presionar <strong>Aplicar Cambios</strong>.</li>
+<li>Reiniciar el editor de PCB.</li>
+</ol>
+<hr />
+<h2 id="3-diseno-del-esquema-electrico-schematic-editor">3. Diseño del Esquema Eléctrico (Schematic Editor)</h2>
+<p>En el módulo Editor de Esquemas, se construyó la lógica eléctrica del proyecto.</p>
+<p><img alt="Esquema eléctrico" src="../recursos/imgs/abc123bc-67e6-406e-80ac-654514811ea0.png" /></p>
+<h3 id="31-seleccion-de-componentes">3.1 Selección de Componentes</h3>
+<p>Se seleccionaron e incorporaron los siguientes símbolos y footprints:
+* <strong>Pulsadores (4 unidades):</strong> <code>SW1</code>, <code>SW2</code>, <code>SW3</code>, <code>SW4</code> (<code>Switch_Tactile_Omron</code>).
+* <strong>Diodos LED (4 unidades):</strong> 
+  * <code>D1</code>, <code>D3</code>: LEDs Azules (<code>Azul</code>).
+  * <code>D2</code>, <code>D4</code>: LEDs Rojos (<code>Rojo</code>).
+* <strong>Resistencias:</strong>
+  * Resistencias de paso/limitación de $220\,\Omega$: <code>R2</code>, <code>R4</code>, <code>R6</code>, <code>R8</code>.
+  * Resistencias de <em>pull-down</em> de $1\,\text{k}\Omega$: <code>R1</code>, <code>R3</code>, <code>R5</code>, <code>R7</code>.
+* <strong>Conectores de Interfaz:</strong>
+  * <code>J1</code>: Conector de Salidas de 4 pines (<code>Salidas</code>: <code>S1</code>, <code>S2</code>, <code>S3</code>, <code>S4</code>).
+  * <code>J2</code>: Conector de Alimentación de 2 pines (<code>Alimentación</code>: <code>V3.3 / V+</code> y <code>GND</code>).</p>
+<h3 id="32-organizacion-y-conexiones">3.2 Organización y Conexiones</h3>
+<p>El diseño se estructuró mediante bloques funcionales:
+1. <strong>Bloque Entradas y Salidas:</strong> Agrupa las clemas/cabezales <code>J1</code> y <code>J2</code>.
+2. <strong>Bloque Botones:</strong> Agrupa las cuatro etapas de conmutación. Cada botón envía su señal de salida (<code>S1</code>–<code>S4</code>) al conector <code>J1</code> al presionarse y polariza directamente el LED correspondiente. Se emplearon etiquetas globales/locales (<code>PWR_3V3</code>, <code>PWR_GND</code>, <code>V3.3</code>, <code>GND</code>) para mantener un esquema limpio y legible.</p>
+<hr />
+<h2 id="4-diseno-de-la-placa-de-circuito-impreso-pcb-layout">4. Diseño de la Placa de Circuito Impreso (PCB Layout)</h2>
+<p>Una vez transferida la lista de redes al editor de PCB, se procedió al posicionamiento de componentes y ruteo de pistas.</p>
+<p><img alt="Layout de la PCB" src="../recursos/imgs/b6840445-175e-4ecd-a5c7-ccf16dd29f4b.jpeg" /><br />
+<em>Figura 2: Vista del trazado de la PCB con plano de masa y contorno en X.</em></p>
+<h3 id="41-definicion-del-contorno-edgecuts-a-20-mm">4.1 Definición del Contorno (<code>Edge.Cuts</code> a 2.0 mm)</h3>
+<ul>
+<li>Se diseñó un contorno geométrico personalizado de 4 lóbulos simétricos en forma de "X".</li>
+<li><strong>Capa asignada:</strong> <code>Edge.Cuts</code>.</li>
+<li><strong>Ancho de línea:</strong> $78.74016\,\text{mils} \approx \mathbf{2.0\,\text{mm}}$, garantizando la visibilidad adecuada para el fresado de la placa en el proceso de ruteado CNC.</li>
+</ul>
+<h3 id="42-enrutado-y-ancho-de-pistas-04-mm">4.2 Enrutado y Ancho de Pistas (0.4 mm)</h3>
+<ul>
+<li><strong>Ancho de pista por defecto / señales:</strong> Se configuró un ancho de pista de $0.4\,\text{mm}$ ($\approx 15.75\,\text{mils}$) en la clase de red principal, adecuado para el manejo de señales de control e iluminación LED sin caídas térmicas ni de tensión apreciables.</li>
+</ul>
+<h3 id="43-explicacion-de-las-capas-del-proyecto">4.3 Explicación de las Capas del Proyecto</h3>
+<p>En el panel lateral de capas se utilizan las siguientes capas fundamentales:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capa</th>
+<th style="text-align: left;">Nombre Completo</th>
+<th style="text-align: left;">Función en la Placa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>F.Cu</code></strong></td>
+<td style="text-align: left;"><em>Front Copper</em> (Cobre Superior)</td>
+<td style="text-align: left;">Aloja las pistas principales de señal y el plano de masa superior (color rojo).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>Edge.Cuts</code></strong></td>
+<td style="text-align: left;"><em>Board Outline</em> (Corte del Borde)</td>
+<td style="text-align: left;">Delimita el perímetro exacto que la fresadora o láser recortará para la PCB final (ancho de $2.0\,\text{mm}$).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>User.3</code></strong></td>
+<td style="text-align: left;"><em>Cuts</em> (Cortes)</td>
+<td style="text-align: left;">Establece los cortes que se quieren realizar en la PCB.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-exportacion-de-datos-para-fabricacion">5. Exportación de Datos para Fabricación</h2>
+<ol>
+<li>Se ejecutó la verificación de reglas de diseño (<strong>DRC - Design Rules Check</strong>) para garantizar cero cortocircuitos ni pistas incompletas.</li>
+<li>Mediante el icono de <strong>FabLib</strong>, se generó la carpeta de manufactura con:</li>
+<li><strong>Archivos Gerber (<code>.gbr</code>):</strong> <code>F_Cu.gbr</code>, <code>Edge_Cuts.gbr</code>, <code>User_3.gbr</code>.</li>
+</ol>
+<hr />
+<h2 id="6-conclusiones">6. Conclusiones</h2>
+<ul>
+<li>Se logró diseñar exitosamente una PCB totalmente funcional respetando las reglas de diseño para la manipulación manual de prototipos (pistas de 0.4 mm).</li>
+<li>La implementación del contorno en la capa <code>Edge.Cuts</code> con grosor de 2.0 mm permitió definir un chasis estético y adaptado al factor de forma deseado.</li>
+<li>La integración de FabLib en KiCad simplificó la creación de la PCB al proporcionar componentes y huellas estandarizadas, permitiendo un diseño más rápido, preciso y adecuado para su posterior fabricación.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
