@@ -19,12 +19,12 @@
 1. Introducción y Objetivos
 2. Instalación de Plugins (KiCad FabLib)
 3. Diseño del Esquema Eléctrico
-   3.1 Selección de Componentes
-   3.2 Organización y Conexiones
+   -3.1 Selección de Componentes
+   -3.2 Organización y Conexiones
 4. Diseño de la Placa de Circuito Impreso (PCB Layout)
-   4.1 Definición del Contorno (Edge.Cuts a 2.0 mm)
-   4.2 Enrutado y Ancho de Pistas (0.4 mm)
-   4.3 Explicación de las Capas del Proyecto
+   -4.1 Definición del Contorno (Edge.Cuts a 2.0 mm)
+   -4.2 Enrutado y Ancho de Pistas (0.4 mm)
+   -4.3 Explicación de las Capas del Proyecto
 5. Exportación de Datos para Fabricación
 6. Conclusiones
 
