@@ -48,7 +48,7 @@ Este proyecto describe el proceso que se llevo a cabo en la materia de Producci�
 
 Se agregó el complemento KiCad FabLib para disponer de una biblioteca estandarizada de componentes, símbolos y footprints utilizados comúnmente en entornos Fab Lab, facilitando el diseño y la fabricación de PCB.
 
-![Plugin](recursos/imgs/Screenshot2026-09-1.png)
+![Plugin](recursos/imgs/Screenshot2026-09-15.png)
 
 
 
